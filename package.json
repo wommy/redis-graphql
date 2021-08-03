@@ -1,8 +1,23 @@
 {
   "name": "redis-graphql",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "repository": "git@github.com:wommy/redis-graphql.git",
   "author": "wommy <tom@technomad.media>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon babel src -d dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "apollo-server": "^3.1.1",
+    "graphql": "^15.5.1",
+    "ioredis": "^4.27.7"
+  }
 }
